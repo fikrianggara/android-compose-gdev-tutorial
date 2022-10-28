@@ -41,28 +41,28 @@ fun ComposeQuadrantApp() {
     Column(Modifier.fillMaxWidth()) {
         Row(Modifier.weight(1f)) {
             ComposableInfoCard(
-                title = stringResource(R.string.first_title),
-                description = stringResource(R.string.first_description),
+                title = stringResource(id = R.string.first_title),
+                description = stringResource(id=R.string.first_description),
                 backgroundColor = Color.Green,
                 modifier = Modifier.weight(1f)
             )
             ComposableInfoCard(
-                title = stringResource(R.string.second_title),
-                description = stringResource(R.string.second_description),
+                title = stringResource(id = R.string.first_title),
+                description = stringResource(id=R.string.first_description),
                 backgroundColor = Color.Yellow,
                 modifier = Modifier.weight(1f)
             )
         }
         Row(Modifier.weight(1f)) {
             ComposableInfoCard(
-                title = stringResource(R.string.third_title),
-                description = stringResource(R.string.third_description),
+                title = stringResource(id = R.string.first_title),
+                description = stringResource(id=R.string.first_description),
                 backgroundColor = Color.Cyan,
                 modifier = Modifier.weight(1f)
             )
             ComposableInfoCard(
-                title = stringResource(R.string.fourth_title),
-                description = stringResource(R.string.fourth_description),
+                title = stringResource(id = R.string.first_title),
+                description = stringResource(id=R.string.first_description),
                 backgroundColor = Color.LightGray,
                 modifier = Modifier.weight(1f)
             )
@@ -102,7 +102,35 @@ private fun ComposableInfoCard(
 @Composable
 fun DefaultPreview3() {
     GreetingCard1Theme {
-        ComposeQuadrantApp()
-
+        Column(Modifier.fillMaxWidth()) {
+            Row(Modifier.weight(1f)) {
+                ComposableInfoCard(
+                    title = stringResource(id = R.string.first_title),
+                    description = stringResource(id=R.string.first_description),
+                    backgroundColor = Color.Green,
+                    modifier = Modifier.weight(1f)
+                )
+                ComposableInfoCard(
+                    title = stringResource(id = R.string.second_title),
+                    description = stringResource(id=R.string.second_description),
+                    backgroundColor = Color.Yellow,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+            Row(Modifier.weight(1f)) {
+                ComposableInfoCard(
+                    title = stringResource(id = R.string.first_title),
+                    description = stringResource(id=R.string.first_description),
+                    backgroundColor = Color.Cyan,
+                    modifier = Modifier.weight(1f)
+                )
+                ComposableInfoCard(
+                    title = stringResource(id = R.string.fourth_title),
+                    description = stringResource(id=R.string.fourth_description),
+                    backgroundColor = Color.LightGray,
+                    modifier = Modifier.weight(1f)
+                )
+            }
+        }
     }
 }
