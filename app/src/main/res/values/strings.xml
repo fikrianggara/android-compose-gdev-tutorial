@@ -5,4 +5,7 @@
     <string name="title_activity_submission1">Submission1Activity</string>
     <string name="title">Jetpack Compose tutorial</string>
     <string name="desc_1">Jetpack Compose is a modern toolkit for building native Android UI. Compose simplifies and accelerates UI development on Android with less code, powerful tools, and intuitive Kotlin APIs.</string>
+    <string name="title_activity_task_manager">TaskManagerActivity</string>
+    <string name="task_manager_title">All tasks completed</string>
+    <string name="task_manager_subtitle">Nice work!</string>
 </resources>
