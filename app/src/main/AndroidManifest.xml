@@ -13,6 +13,15 @@
         android:theme="@style/Theme.GreetingCard1"
         tools:targetApi="31">
         <activity
+            android:name=".DiceRollerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dice_roller"
+            android:theme="@style/Theme.GreetingCard1">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ComposeQuadrantAcivity"
             android:exported="false"
             android:label="@string/title_activity_compose_quadrant_acivity"
